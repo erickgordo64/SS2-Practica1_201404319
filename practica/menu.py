@@ -1,0 +1,11 @@
+def print_main_menu():
+    print('===========================================================')
+    print('====================PRACTICA 1 MENU========================')
+    print('===========================================================')
+    print("1. Borrar modelo")
+    print("2. Crear modelo")
+    print("3. Extraer Informacicon")
+    print("4. limpiar informacion")
+    print("5. Cargar Informacicon")
+    print("6. Realizar Consultas")
+    print("7. Salir")
