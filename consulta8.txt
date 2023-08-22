@@ -1,0 +1,7 @@
+Fila: (69, 'Domingo')
+Fila: (74, 'Jueves')
+Fila: (79, 'Lunes')
+Fila: (75, 'Martes')
+Fila: (74, 'Mi+¬rcoles')
+Fila: (78, 'S+íbado')
+Fila: (63, 'Viernes')

@@ -1,0 +1,5 @@
+Fila: (5, ' Paquete peque+¦o', 'Entregado')
+Fila: (4, ' Env+¡o a domicilio', 'Entregado')
+Fila: (4, ' Env+¡o a zona remota', 'Entregado')
+Fila: (4, ' Env+¡o de productos de limpieza', 'Entregado')
+Fila: (4, ' Env+¡o de productos m+¬dicos', 'Entregado')

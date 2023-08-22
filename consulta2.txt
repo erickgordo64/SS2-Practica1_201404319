@@ -1,0 +1,5 @@
+Fila: (3, 'Catalina Moreno')
+Fila: (3, 'Catalina Vargas')
+Fila: (2, 'Alejandro P+¬rez')
+Fila: (2, 'Ana Gonz+ílez')
+Fila: (2, 'Andr+¬s Rojas')

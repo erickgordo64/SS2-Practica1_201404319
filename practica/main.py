@@ -7,7 +7,7 @@ def main():
 
 def menuPrint():
     opcion = None
-    while opcion != "6":
+    while opcion != "7":
         print_main_menu()
         opcion = input("Seleccione una opción: ")
 
@@ -114,6 +114,7 @@ def consultas():
 
 def consulta1():
     try:
+        texto = ""
         ruta_archivo_sql = os.path.join('practica','consultas', 'consulta1.sql')
         with open(ruta_archivo_sql, 'r') as sql_file:
             contenido_sql = sql_file.read()
@@ -126,14 +127,17 @@ def consulta1():
                     resultados = cursor.fetchall()
 
                     for fila in resultados:
-                         print(f"Fila: {fila}")
-
-                    print("------------")
+                        print(f"Fila: {fila}")
+                        texto += f"Fila: {fila}\n"
+                    texto = texto + "------------\n"
+        crearArchivo(texto, "consulta1.txt")
+        
     except Exception as e:
                 print("Ocurrió un error al consultar: ", e)
 
 def consulta2():
     try:
+        texto = ""
         ruta_archivo_sql = os.path.join('practica','consultas', 'consulta2.sql')
         with open(ruta_archivo_sql, 'r') as sql_file:
             contenido_sql = sql_file.read()
@@ -143,11 +147,14 @@ def consulta2():
 
                 for Dato in Datos:
                     print(Dato)
+                    texto += f"Fila: {Dato}\n"
+        crearArchivo(texto, "consulta2.txt")
     except Exception as e:
                 print("Ocurrió un error al consultar: ", e)
 
 def consulta3():
     try:
+        texto = ""
         ruta_archivo_sql = os.path.join('practica','consultas', 'consulta3.sql')
         with open(ruta_archivo_sql, 'r') as sql_file:
             contenido_sql = sql_file.read()
@@ -157,11 +164,14 @@ def consulta3():
 
                 for Dato in Datos:
                     print(Dato)
+                    texto += f"Fila: {Dato}\n"
+        crearArchivo(texto, "consulta3.txt")
     except Exception as e:
                 print("Ocurrió un error al consultar: ", e)
 
 def consulta4():
     try:
+        texto = ""
         ruta_archivo_sql = os.path.join('practica','consultas', 'consulta4.sql')
         with open(ruta_archivo_sql, 'r') as sql_file:
             contenido_sql = sql_file.read()
@@ -171,11 +181,14 @@ def consulta4():
 
                 for Dato in Datos:
                     print(Dato)
+                    texto += f"Fila: {Dato}\n"
+        crearArchivo(texto, "consulta4.txt")
     except Exception as e:
                 print("Ocurrió un error al consultar: ", e)
 
 def consulta5():
     try:
+        texto = ""
         ruta_archivo_sql = os.path.join('practica','consultas', 'consulta5.sql')
         with open(ruta_archivo_sql, 'r') as sql_file:
             contenido_sql = sql_file.read()
@@ -185,11 +198,14 @@ def consulta5():
 
                 for Dato in Datos:
                     print(Dato)
+                    texto += f"Fila: {Dato}\n"
+        crearArchivo(texto, "consulta5.txt")
     except Exception as e:
                 print("Ocurrió un error al consultar: ", e)
 
 def consulta6():
     try:
+        texto = ""
         ruta_archivo_sql = os.path.join('practica','consultas', 'consulta6.sql')
         with open(ruta_archivo_sql, 'r') as sql_file:
             contenido_sql = sql_file.read()
@@ -199,11 +215,14 @@ def consulta6():
 
                 for Dato in Datos:
                     print(Dato)
+                    texto += f"Fila: {Dato}\n"
+        crearArchivo(texto, "consulta6.txt")
     except Exception as e:
                 print("Ocurrió un error al consultar: ", e)
 
 def consulta7():
     try:
+        texto = ""
         ruta_archivo_sql = os.path.join('practica','consultas', 'consulta7.sql')
         with open(ruta_archivo_sql, 'r') as sql_file:
             contenido_sql = sql_file.read()
@@ -213,11 +232,14 @@ def consulta7():
 
                 for Dato in Datos:
                     print(Dato)
+                    texto += f"Fila: {Dato}\n"
+        crearArchivo(texto, "consulta7.txt")
     except Exception as e:
                 print("Ocurrió un error al consultar: ", e)
 
 def consulta8():
     try:
+        texto = ""
         ruta_archivo_sql = os.path.join('practica','consultas', 'consulta8.sql')
         with open(ruta_archivo_sql, 'r') as sql_file:
             contenido_sql = sql_file.read()
@@ -227,11 +249,14 @@ def consulta8():
 
                 for Dato in Datos:
                     print(Dato)
+                    texto += f"Fila: {Dato}\n"
+        crearArchivo(texto, "consulta8.txt")
     except Exception as e:
                 print("Ocurrió un error al consultar: ", e) 
 
 def consulta9():
     try:
+        texto = ""
         ruta_archivo_sql = os.path.join('practica','consultas', 'consulta9.sql')
         with open(ruta_archivo_sql, 'r') as sql_file:
             contenido_sql = sql_file.read()
@@ -241,11 +266,14 @@ def consulta9():
 
                 for Dato in Datos:
                     print(Dato)
+                    texto += f"Fila: {Dato}\n"
+        crearArchivo(texto, "consulta9.txt")
     except Exception as e:
                 print("Ocurrió un error al consultar: ", e)
 
 def consulta10():
     try:
+        texto = ""
         ruta_archivo_sql = os.path.join('practica','consultas', 'consulta10.sql')
         with open(ruta_archivo_sql, 'r') as sql_file:
             contenido_sql = sql_file.read()
@@ -255,8 +283,16 @@ def consulta10():
 
                 for Dato in Datos:
                     print(Dato)
+                    texto += f"Fila: {Dato}\n"
+        crearArchivo(texto, "consulta10.txt")
     except Exception as e:
                 print("Ocurrió un error al consultar: ", e)
+
+def crearArchivo(texto, nombre_archivo):
+    # Abrir un archivo en modo escritura
+    with open(nombre_archivo, "w") as archivo:
+        # Escribir el texto en el archivo
+        archivo.write(texto)
 
 if __name__ == "__main__":
     main()

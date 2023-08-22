@@ -1,0 +1,5 @@
+Fila: (6, ' Caja de mercanc+¡a', 'Pendiente')
+Fila: (4, ' Bulto pesado', 'Pendiente')
+Fila: (4, ' Caja mediana', 'Pendiente')
+Fila: (4, ' Env+¡o a domicilio', 'Pendiente')
+Fila: (4, ' Env+¡o a+¬reo', 'Pendiente')

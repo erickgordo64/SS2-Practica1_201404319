@@ -1,0 +1,5 @@
+Fila: (49.93, ' Env+¡o de productos m+¬dicos')
+Fila: (49.88, ' Env+¡o de muestras')
+Fila: (49.7, ' Caja de mercanc+¡a')
+Fila: (49.62, ' Caja grande')
+Fila: (49.59, ' Env+¡o ecol+¦gico')
